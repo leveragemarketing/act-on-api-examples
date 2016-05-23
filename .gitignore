@@ -1,0 +1,4 @@
+composer.lock
+auth.json
+token.json
+/vendor/
