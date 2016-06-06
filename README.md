@@ -21,10 +21,28 @@ Refresh your token:
 Current token is still good, not doing anything.
 ```
 
-Run your API queries:
+Run some example scripts:
 ```
 % ./listList.php
 There are 2 lists:
   [l-ctx] Contacts
   [l-tst] Test List
+```
+
+```
+% ./contactUpdateById.php
+Array
+(
+    [status] => success
+    [message] => Record updated
+)
+```
+
+```
+% ./factInsert.php
+Array
+(
+    [jobId] => 7829029
+    [status] => success
+)
 ```
