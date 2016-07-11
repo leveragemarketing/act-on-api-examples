@@ -8,6 +8,8 @@ $contactId = 2;
 $categoryId = 2;
 $senderName = 'Foo Bar';
 $senderEmail = 'foo@bar.com';
+$headerId = 1;
+$footerId = 0;
 
 require_once './vendor/autoload.php';
 
@@ -32,6 +34,8 @@ $result = $client->post('/api/1/message/custom/send', [
         'subject' => 'this is the subject of a custom message',
         'textbody' => 'this is the text body of a custom message',
         'htmlbody' => '<h1>this is the html body of a custom message</h1>',
+        'headerid' => $headerId,
+        'footerid' => $footerId,
         'categoryid' => $categoryId,
     ],
 ]);
